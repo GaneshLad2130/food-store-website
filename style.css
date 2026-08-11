@@ -522,15 +522,24 @@ footer h3 {
 /* Submit */
 
 .review-submit {
+    display: inline-block;
     margin-top: 15px;
-    border: none;
     background: #8b1e1e;
     color: white;
     padding: 13px 25px;
     border-radius: 25px;
     font-size: 16px;
     font-weight: bold;
-    cursor: pointer;
+    text-decoration: none;
+}
+
+.review-submit:hover {
+    opacity: 0.85;
+}
+
+.review-note {
+    margin-top: 15px;
+    font-size: 14px;
 }
 
 
