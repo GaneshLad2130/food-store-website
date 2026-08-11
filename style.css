@@ -289,3 +289,68 @@ footer h3 {
         height: 200px;
     }
 }
+
+/* Festival Section */
+
+.festival-section {
+    background: #f5e4ce;
+}
+
+.festival-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.festival-card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.festival-icon {
+    font-size: 55px;
+    margin-bottom: 12px;
+}
+
+.festival-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.festival-card p {
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+.festival-card button {
+    border: none;
+    background: #8b1e1e;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+/* Festival cards on smaller screens */
+
+@media (max-width: 900px) {
+
+    .festival-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .festival-grid {
+        grid-template-columns: 1fr;
+    }
+}
