@@ -431,3 +431,122 @@ footer h3 {
         font-size: 16px;
     }
 }
+
+/* Customer Reviews */
+
+.reviews-section {
+    background: #fffaf3;
+    text-align: center;
+}
+
+.reviews-list {
+    max-width: 900px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.review-card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.review-stars {
+    color: #d99a00;
+    font-size: 22px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.review-card h3 {
+    margin-bottom: 8px;
+}
+
+.review-form {
+    max-width: 600px;
+    margin: 50px auto 0;
+    padding: 30px;
+    background: #f5e4ce;
+    border-radius: 20px;
+}
+
+.review-form h3 {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+
+/* Star buttons */
+
+.star-rating {
+    margin: 20px 0;
+}
+
+.star-rating button {
+    border: none;
+    background: transparent;
+    font-size: 38px;
+    color: #c9c9c9;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.star-rating button.selected {
+    color: #d99a00;
+}
+
+
+/* Name and comment */
+
+.review-form input,
+.review-form textarea {
+    width: 100%;
+    padding: 13px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.review-form textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+
+/* Submit */
+
+.review-submit {
+    margin-top: 15px;
+    border: none;
+    background: #8b1e1e;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+    .reviews-list {
+        grid-template-columns: 1fr;
+    }
+
+    .review-form {
+        padding: 22px;
+    }
+
+    .star-rating button {
+        font-size: 34px;
+    }
+}
